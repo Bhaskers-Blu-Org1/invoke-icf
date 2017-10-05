@@ -1,15 +1,22 @@
 {
-	"name": "InvokeICF",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"start": "node service-client.js"
-	},
-	"dependencies": {
-		"request": "2.72.0"
-	},
-	"repository": {},
-	"engines": {
-		"node": "6.x"
-	}
+  "name": "invoke-icf",
+  "version": "1.0.0",
+  "description": "A simple example that invokes an IBM Cloud Functions action.",
+  "author": {
+    "name": "Doug Tidwell"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node service-client.js"
+  },
+  "dependencies": {
+    "request": "2.72.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DougTidwell/invoke-icf.git"
+  },
+  "engines": {
+    "node": "6.x"
+  }
 }
