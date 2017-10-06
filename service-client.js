@@ -1,16 +1,16 @@
-var options = {
+const options = {
   // This is the URL of a sample deployed through the developerWorks sandbox.
   // See https://developer.ibm.com/sandbox/index.html to deploy your own code.
   url: 'https://openwhisk.ng.bluemix.net/api/v1/web/devworkssandbox_pub/0100001H7N/1046891-1001.json',
 
-  // Use any name you like...
-  body: {'name': 'Doug'},
-
   // We're using JSON, of course. You may need to include Authorization or
   // other HTTP headers depending on the service. For the service we're using
-  // here, this is all you need. 
+  // here, this is all you need.
   headers: {'Content-Type': 'application/json'},
-  json: true
+  json: true,
+
+  // Use any name you like...
+  body: {'name': 'Doug'}
 };
 
 // If the call worked, we print the JSON response, otherwise we print
@@ -24,5 +24,5 @@ function icfCallback(err, response, body) {
 }
 
 // We're doing a POST with the options and callback function we defined
-var request = require('request');
+const request = require('request');
 request.post(options, icfCallback);
